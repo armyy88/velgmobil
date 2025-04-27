@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Responsive Images with Links</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .image-container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .image-container a {
+      flex: 1 1 300px;
+      max-width: 45%;
+    }
+
+    .image-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .image-container img:hover {
+      transform: scale(1.03);
+    }
+
+    @media (max-width: 600px) {
+      .image-container a {
+        max-width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="image-container">
+    <a href="https://bioqoo.com/lebaran11">
+      <img src="https://ik.imagekit.io/qghvpo04q/1(1).jpg?updatedAt=1745072667562" alt="Gambar 1" />
+    </a>
+    <a href="https://bioqoo.com/lebaran11">
+      <img src="https://ik.imagekit.io/qghvpo04q/2.gif?updatedAt=1745072647307" alt="Gambar 2" />
+    </a>
+  </div>
+
+</body>
+</html>
